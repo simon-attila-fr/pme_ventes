@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS produits (
 CREATE TABLE IF NOT EXISTS ventes (
     id_reference_produit VARCHAR(100),
     id_magasin INTEGER,
-    id_vente INTEGER PRIMARY KEY,
+    id_vente INTEGER PRIMARY KEY AUTOINCREMENT,
     quantite INTEGER,
     created_at TIMESTAMP,
     updated_at TIMESTAMP,
