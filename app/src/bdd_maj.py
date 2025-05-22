@@ -33,9 +33,11 @@ def bdd_maj():
                 print("Rajoute de nouvelles données...")
                 nouvelles_ventes.to_sql("ventes", bdd_connexion, if_exists="append", index=False)
                 print("OK")
+                bdd_connexion.close()
             else:
                 print("Il n'y a pas de nouvelles ventes.")
+                bdd_connexion.close()
 
-        bdd_connexion.close()
+        # bdd_connexion.close()
     except Exception as error:
         print("Erreur lors de la mise à jour de la base de données : ", error)
