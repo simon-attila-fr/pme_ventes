@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS magasins (
     id_magasin INTEGER PRIMARY KEY,
     ville VARCHAR(100),
-    nb_de_salaries INTEGER,
+    nombre_de_salaries INTEGER,
     created_at TIMESTAMP
 );
 
@@ -17,6 +17,7 @@ CREATE TABLE IF NOT EXISTS ventes (
     id_reference_produit VARCHAR(100),
     id_magasin INTEGER,
     id_vente INTEGER PRIMARY KEY AUTOINCREMENT,
+    date DATE,
     quantite INTEGER,
     created_at TIMESTAMP,
     updated_at TIMESTAMP,

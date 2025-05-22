@@ -3,12 +3,12 @@ import os
 import requests
 import pandas
 import io
+import datetime
 
 def bdd_maj():
     try:
-        print("Recherche de nouvelles ventes...")
-        # Lire le table ventes
-        # Dernier élément : trier par date desc, LIMIT 1
+        print(f"[{datetime.datetime.now()}] Recherche de nouvelles ventes...")
+        # Lire la table ventes --> la date de la dernière vente.
         bdd_path = os.getenv('SQLITE_BDD_PATH', '/bdd/bdd.sqlite3') # Bdd path
 
         with sqlite3.connect(bdd_path) as bdd_connexion:
