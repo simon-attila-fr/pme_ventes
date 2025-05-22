@@ -7,7 +7,7 @@ SELECT
   when 4 then 'Jeudi'
   when 5 then 'Vendredi'
   else 'Samedi' end as weekday,
-  SUM(produits.prix) AS revenue_totale
+  ROUND(SUM(produits.prix), 2) AS revenue_totale
 FROM ventes
 INNER JOIN produits
 ON produits.id_reference_produit = ventes.id_reference_produit
