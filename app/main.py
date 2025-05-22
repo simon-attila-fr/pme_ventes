@@ -116,7 +116,7 @@ try:
     def bdd_ventes_maj_reguliere():
         bdd_maj.bdd_maj()
         while True:
-            time.sleep(120)
+            time.sleep(60)
             bdd_maj.bdd_maj()
     thread = threading.Thread(target=bdd_ventes_maj_reguliere, daemon=True)
     thread.start()
