@@ -30,7 +30,7 @@ analyse_menu = (
     "produits_classement_par_quantite_vendu",
     "produits_classement_par_revenue",
     "ventes_classement_de_jours_par_revenue",
-    "ventes_classement_jours_totale_revenue"
+    "ventes_classement_jours_totale_revenue",
     "ventes_moyenne_revenue_par_produit_par_ventes",
     "ventes_totale_de_periode"
 )
